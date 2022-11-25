@@ -203,6 +203,10 @@ header {
     background-size: 150px, 90px;
     background-position: top 30px left 65px, right bottom;
   }
+  .abaut .abaut__title {
+    font-size: 25px;
+    padding-bottom: 0;
+  }
   .abaut .abaut__list {
     margin-top: 30px;
     margin-left: 0;
