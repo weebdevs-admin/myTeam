@@ -1,49 +1,119 @@
-header{
-    background-color:#014E56;
+header {
+    background-color: #014E56;
     padding: 70px 0;
 }
-.nav{
+
+.nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.nav__list{
+
+.nav__list {
     display: flex;
     align-items: center;
     list-style-type: none;
-    flex-grow: 1; 
-    
+    flex-grow: 1;
+
 }
-.nav__burger{
+
+.nav__burger {
     display: none;
     background-color: transparent;
     border: none;
 }
-.nav__item{
+
+.nav__item {
     margin-left: 40px;
-    a{
+
+    a {
         text-decoration: none;
         color: white;
     }
 }
-.nav__item:nth-child(2){
+
+.nav__item:nth-child(2) {
     display: flex;
     flex-grow: 1;
 }
-.nav__item:last-child{
+
+.nav__item:last-child {
     border: 1px solid #fff;
     border-radius: 24px;
     padding: 9px 32px;
-    width: 160px;
+    max-width: 160px;
     height: 35px;
     text-align: center;
 
 }
-.nav__item :hover{
+
+.nav__item :hover {
     color: blue;
     transition: all ease 0.6s;
 }
-.nav__logo :hover{
+
+.nav__logo :hover {
     color: blue;
     transition: all ease 0.6s;
 }
+
+.abaut{
+    display: flex;
+    justify-content: space-between;
+    background-color: #012F34;
+    position: relative;
+    padding-bottom: 70px;
+    background-image: url(../../img/Rectangle.png), url(../../img/Group\ 8\ \(1\).png);
+    background-repeat: no-repeat;
+    background-position: top 140px left 165px, right bottom;
+    .abaut__list{
+        margin-top: 150px;
+        font-size: 10x;
+    }
+
+
+    h2 {
+        color: white;
+        margin-top: 192px;
+        margin-left: 165px;
+        height: 144px;
+        max-width: 445px;
+        font-family: Livvic;
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 48px;
+        letter-spacing: 0px;
+        text-align: left;
+
+    }
+   .abaut__list-item{
+    @include listStyle;
+    margin-left: 180px;
+    display: flex;
+    align-items: center;    
+    font-size: 15px;
+   }
+        img{
+            width: 46px;
+            height: 46px;
+            margin-right: 15px;
+            
+                }
+            b{
+                color:#F67E7E;
+            }
+   
+
+    
+   
+            p{
+                margin-left: 220px;
+                margin-right: 180px;
+                color:white;
+                height: 50px;
+                max-width: 445px;
+
+
+            }
+    }
+

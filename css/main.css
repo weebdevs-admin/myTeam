@@ -56,7 +56,7 @@ header {
   border: 1px solid #fff;
   border-radius: 24px;
   padding: 9px 32px;
-  width: 160px;
+  max-width: 160px;
   height: 35px;
   text-align: center;
 }
@@ -69,6 +69,57 @@ header {
 .nav__logo :hover {
   color: blue;
   transition: all ease 0.6s;
+}
+
+.abaut {
+  display: flex;
+  justify-content: space-between;
+  background-color: #012F34;
+  position: relative;
+  padding-bottom: 70px;
+  background-image: url(../../img/Rectangle.png), url(../../img/Group\ 8\ \(1\).png);
+  background-repeat: no-repeat;
+  background-position: top 140px left 165px, right bottom;
+}
+.abaut .abaut__list {
+  margin-top: 150px;
+  font-size: 10x;
+}
+.abaut h2 {
+  color: white;
+  margin-top: 192px;
+  margin-left: 165px;
+  height: 144px;
+  max-width: 445px;
+  font-family: Livvic;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.abaut .abaut__list-item {
+  text-decoration: none;
+  list-style-type: none;
+  margin-left: 180px;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+}
+.abaut img {
+  width: 46px;
+  height: 46px;
+  margin-right: 15px;
+}
+.abaut b {
+  color: #F67E7E;
+}
+.abaut p {
+  margin-left: 220px;
+  margin-right: 180px;
+  color: white;
+  height: 50px;
+  max-width: 445px;
 }
 
 #hero {
@@ -126,7 +177,11 @@ header {
     font-size: 60px;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 600px) {
+  #hero {
+    background-image: url(../../img/bg_bottom.png);
+    background-position: bottom 90%;
+  }
   .nav__list {
     display: none;
   }
@@ -135,5 +190,342 @@ header {
   }
   .nav {
     padding: 0 15px;
+  }
+  .hero__text {
+    width: 90%;
+  }
+  .abaut {
+    display: block;
+    margin: 0 auto;
+    padding-top: 55px;
+    background-image: url(../../img/Rectangle.png), url(../../img/Group\ 8\ \(1\).png);
+    background-repeat: no-repeat;
+    background-size: 150px, 90px;
+    background-position: top 30px left 65px, right bottom;
+  }
+  .abaut .abaut__list {
+    margin-top: 30px;
+    margin-left: 0;
+    padding: 0;
+  }
+  .abaut h2 {
+    margin: 0;
+    text-align: center;
+    padding: 0;
+  }
+  .abaut .abaut__list-item {
+    text-decoration: none;
+    list-style-type: none;
+    margin-left: 0px;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+  }
+  .abaut .abaut__list-item img {
+    width: 46px;
+    height: 46px;
+  }
+  .abaut .abaut__list-item b {
+    color: #F67E7E;
+  }
+  .abaut p {
+    margin-left: 0;
+    width: 90%;
+    text-align: center;
+    margin-bottom: 30px;
+    color: white;
+  }
+  .users h2 {
+    font-family: "Livvic";
+    font-style: normal;
+    /* or 100% */
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 100px;
+    font-size: 28px;
+    color: white;
+    text-align: center;
+    height: 76px;
+    width: 90%;
+  }
+  .users h2 span {
+    color: #79C8C7;
+  }
+  .users__list {
+    display: block;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .users__list .users__item {
+    list-style-type: none;
+    font-family: "Livvic";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 25px;
+    /* or 167% */
+    margin-top: 22px;
+    color: white;
+    text-align: center;
+    box-shadow: 0px 0px 10px white;
+  }
+  .users__list p {
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 0;
+  }
+  .users__list img {
+    border: 2px solid #C4FFFE;
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    margin-top: 22px;
+  }
+  .users__list b {
+    color: #79C8C7;
+  }
+}
+.users {
+  padding-bottom: 50px;
+}
+
+.users__title {
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  /* or 100% */
+  margin-left: 104px;
+  margin-right: 104px;
+  margin-top: 140px;
+  color: white;
+  text-align: center;
+  height: 96px;
+  width: 932px;
+}
+.users__title span {
+  color: #79C8C7;
+}
+
+.users__list {
+  display: flex;
+  justify-content: space-between;
+}
+.users__list .users__item {
+  list-style-type: none;
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  /* or 167% */
+  margin-top: 92px;
+  color: white;
+  text-align: center;
+}
+.users__list img {
+  border: 2px solid #C4FFFE;
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  margin-top: 42px;
+}
+.users__list b {
+  color: #79C8C7;
+}
+
+.contact {
+  width: 100%;
+  height: 200px;
+  background-image: url(../../img/contact_left.svg);
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-color: #F67E7E;
+  display: flex;
+  align-items: center;
+}
+.contact .contact__title {
+  color: white;
+  display: inline-block;
+  height: 48px;
+  width: 504px;
+  left: 0px;
+  top: 0px;
+  border-radius: nullpx;
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  /* identical to box height, or 100% */
+}
+.contact a {
+  width: 88px;
+  height: 28px;
+  padding: 10px 20px;
+  color: #012F34;
+  text-decoration: none;
+  margin-left: 200px;
+  border-radius: 20px;
+  border: 3px solid #012F34;
+}
+
+.footer {
+  width: 100%;
+  padding: 0;
+  padding-top: 48px;
+  height: 196px;
+}
+.footer .container {
+  display: flex;
+}
+.footer .footer__nav .footer__list {
+  display: flex;
+  justify-content: space-around;
+}
+.footer .footer__nav .footer__list .footer__list-item {
+  list-style-type: none;
+  margin-top: 5px;
+}
+.footer .footer__nav .footer__list img {
+  margin-left: 135px;
+  margin-top: 48px;
+}
+.footer .footer__nav .footer__list a {
+  color: white;
+  text-decoration: none;
+  list-style-type: none;
+}
+.footer .footer__abaut p {
+  height: 100px;
+  width: 145px;
+  height: 100px;
+  left: 39.04%;
+  right: 0%;
+  top: calc(50% - 50px);
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  /* or 167% */
+  color: #FFFFFF;
+  margin-left: 150px;
+  mix-blend-mode: normal;
+  opacity: 0.6;
+}
+.footer .footer__social img {
+  margin-left: 10px;
+}
+.footer .footer__social .facebook {
+  margin-left: 276px;
+}
+.footer .footer__social p {
+  margin-left: 125px;
+  margin-top: 50px;
+  color: #FFFFFF;
+  font-family: "Livvic";
+  font-style: normal;
+  opacity: 0.6;
+}
+
+@media (max-width: 500px) {
+  .contact {
+    width: 100%;
+    height: 100px;
+    background-image: url(../../img/contact_left.svg);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-color: #F67E7E;
+    display: flex;
+    align-items: center;
+  }
+  .contact .contact__title {
+    color: white;
+    display: block;
+    height: 28px;
+    width: 304px;
+    text-align: center;
+    left: 0px;
+    top: 0px;
+    border-radius: nullpx;
+    font-family: "Livvic";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 28px;
+    /* identical to box height, or 100% */
+  }
+  .contact a {
+    display: none;
+  }
+  .footer {
+    width: 100%;
+    padding: 0;
+    padding-top: 35px;
+    height: 100px;
+  }
+  .footer .container {
+    display: block;
+  }
+  .footer .footer__nav {
+    text-align: center;
+  }
+  .footer .footer__nav img {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .footer .footer__nav .footer__list {
+    display: inline;
+  }
+  .footer .footer__nav .footer__list .footer__list-item {
+    list-style-type: none;
+    margin-top: 5px;
+    display: inline;
+    margin-left: 12px;
+  }
+  .footer .footer__nav .footer__list img {
+    margin-left: 35px;
+    margin-top: 18px;
+    font-size: 10px;
+  }
+  .footer .footer__nav .footer__list a {
+    color: white;
+    text-decoration: none;
+    list-style-type: none;
+  }
+  .footer .footer__abaut {
+    margin-top: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+    padding: 0;
+  }
+  .footer .footer__abaut p {
+    display: none;
+  }
+  .footer .footer__social {
+    text-align: center;
+  }
+  .footer .footer__social img {
+    margin: 0;
+    margin-left: 0;
+    text-align: center;
+    margin-left: 8px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+  .footer .footer__social .facebook {
+    margin: 0;
+  }
+  .footer .footer__social p {
+    margin: 0;
+    text-align: center;
+    color: #FFFFFF;
+    font-family: "Livvic";
+    font-style: normal;
+    opacity: 0.6;
   }
 }/*# sourceMappingURL=main.css.map */

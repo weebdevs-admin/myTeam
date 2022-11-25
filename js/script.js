@@ -1,1 +1,1 @@
-alert('Weelcome to myTeam')
+// alert('Welcome to myTeam')
